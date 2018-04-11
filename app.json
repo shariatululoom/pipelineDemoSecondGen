@@ -24,7 +24,17 @@
        "url": "https://github.com/wadewegner/salesforce-dx-buildpack#develop"
       }
   ],
- 
+  "env": {
+    "SFDX_DEV_HUB_AUTH_URL": {
+      "required": false
+    },
+    "SFDX_BUILDPACK_DEBUG": {
+      "required": true
+    },
+    "HEROKU_APP_NAME" : {
+      "required": true
+    }
+  },
   "environments": {
     "test": {
       "scripts": {
