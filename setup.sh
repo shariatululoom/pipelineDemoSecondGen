@@ -37,7 +37,7 @@ PROD_USERNAME="practice@odc.com"
 GITHUB_REPO="wadewegner/salesforce-dx-pipeline-sample"
 
 # Your package name
-PACKAGE_NAME="PipelineSamplePackage2"
+PACKAGE_NAME="PackageName"
 
 ### Setup script
 
