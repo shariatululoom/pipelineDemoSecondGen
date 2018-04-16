@@ -34,7 +34,7 @@ STAGING_USERNAME="practice@odc.com"
 PROD_USERNAME="practice@odc.com"
 
 # Repository with your code
-GITHUB_REPO="wadewegner/salesforce-dx-pipeline-sample"
+GITHUB_REPO="/shariatululoom/pipelineDemoSecondGen"
 
 # Your package name
 PACKAGE_NAME="firstpackageskms"
@@ -91,16 +91,16 @@ heroku config:set SFDX_BUILDPACK_DEBUG=true -a $HEROKU_STAGING_APP_NAME
 heroku config:set SFDX_BUILDPACK_DEBUG=true -a $HEROKU_PROD_APP_NAME
 
 # Setup sfdxUrl's for auth
-devHubSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhyfTOHpm.pursBbRdo0wVfdG3FFHMRkxuF7Y6RAlx5N_d5wkbZ7XmirJdF9sllFWmkl_U0N@battlestar-serenity-72610.my.salesforce.com","alias":"skms@devhub.com" #$(sfdx force:org:display --verbose -u $DEV_HUB_USERNAME --json | jq -r .result.sfdxAuthUrl)
+devHubSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhyfTOHpm.pursBbRdo0wVfdG3FFHMRkxuF7Y6RAlx5N_d5wkbZ7XmirJdF9sllFWmkl_U0N@battlestar-serenity-72610.my.salesforce.com"
 heroku config:set SFDX_DEV_HUB_AUTH_URL=$devHubSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 
-devSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhxHYx_TQuhugMHXhftrVdVs7bq6uh7_2jQrvQ474r5gx_yN6H8Z3cSJwuWF4GmgDFXXlD.t@skms-dev-ed.my.salesforce.com" #$(sfdx force:org:display --verbose -u $DEV_USERNAME --json | jq -r .result.sfdxAuthUrl)
+devSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhxHYx_TQuhugMHXhftrVdVs7bq6uh7_2jQrvQ474r5gx_yN6H8Z3cSJwuWF4GmgDFXXlD.t@skms-dev-ed.my.salesforce.com"
 heroku config:set SFDX_AUTH_URL=$devSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 
-stagingSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhzhmeq5obfqjBfmpRAhz1CD9K7ZcWxHSJ5lSqFMRUnT1wMXEQzKBmrdJI5YHkmbQZtNxJia@skmspractice-dev-ed.my.salesforce.com"   #$(sfdx force:org:display --verbose -u $STAGING_USERNAME --json | jq -r .result.sfdxAuthUrl)
+stagingSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhzhmeq5obfqjBfmpRAhz1CD9K7ZcWxHSJ5lSqFMRUnT1wMXEQzKBmrdJI5YHkmbQZtNxJia@skmspractice-dev-ed.my.salesforce.com"  
 heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_STAGING_APP_NAME
 
-stagingSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhzhmeq5obfqjBfmpRAhz1CD9K7ZcWxHSJ5lSqFMRUnT1wMXEQzKBmrdJI5YHkmbQZtNxJia@skmspractice-dev-ed.my.salesforce.com"            #$(sfdx force:org:display --verbose -u $PROD_USERNAME --json | jq -r .result.sfdxAuthUrl)
+stagingSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhzhmeq5obfqjBfmpRAhz1CD9K7ZcWxHSJ5lSqFMRUnT1wMXEQzKBmrdJI5YHkmbQZtNxJia@skmspractice-dev-ed.my.salesforce.com"            
 heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_PROD_APP_NAME
 
 # Add buildpacks to apps
