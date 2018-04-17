@@ -91,13 +91,13 @@ heroku config:set SFDX_BUILDPACK_DEBUG=true -a $HEROKU_STAGING_APP_NAME
 heroku config:set SFDX_BUILDPACK_DEBUG=true -a $HEROKU_PROD_APP_NAME
 
 # Setup sfdxUrl's for auth
-devHubSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhyfTOHpm.pursBbRdo0wVfdG3FFHMRkxuF7Y6RAlx5N_d5wkbZ7XmirJdF9sllFWmkl_U0N@battlestar-serenity-72610.my.salesforce.com"
+devHubSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhyfTOHpm.pursBbRdo0wVfdG3FFHMRkxuF7Y6RAlx5N_d5wkbZ7XmirJdF9sllFWmkl_U0N@battlestar-serenity-72610.my.salesforce.com"
 heroku config:set SFDX_DEV_HUB_AUTH_URL=$devHubSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 
-devSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861hkUriVVOXT6yidRBSQWIDQWwBbJ330ywaKXnzM_8jhzSBNr7gVgFJsiWzLId9mBPXOXR5iPAeMynvLBt@customer-data-9813-dev-ed.cs31.my.salesforce.com"
+devSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861hkUriVVOXT6yidRBSQWIDQWwBbJ330ywaKXnzM_8jhzSBNr7gVgFJsiWzLId9mBPXOXR5iPAeMynvLBt@customer-data-9813-dev-ed.cs31.my.salesforce.com"
 heroku config:set SFDX_AUTH_URL=$devSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 
-stagingSfdxAuthUrl= "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep86110KCjUDVVh32IZcrcvspzhrNl.SlsFdhDI56GijWyiKNP6DzGKW5pbQUMg_tDB.4MKY35gV55RVmZWDl@java-energy-8659-dev-ed.cs5.my.salesforce.com"  
+stagingSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep86110KCjUDVVh32IZcrcvspzhrNl.SlsFdhDI56GijWyiKNP6DzGKW5pbQUMg_tDB.4MKY35gV55RVmZWDl@java-energy-8659-dev-ed.cs5.my.salesforce.com"  
 heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_STAGING_APP_NAME
 
 stagingSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861M6dhd2BtI2502m_lYMrcAouq7yN_SDgA7pu3ebUPXHtUJ7aqand4ZFs6CGQUm5j3eZX7AUYvm3xjS1dn@inspiration-efficiency-5219-dev-ed.cs57.my.salesforce.com"            
