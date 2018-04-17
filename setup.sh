@@ -37,7 +37,7 @@ PROD_USERNAME="ProdOrg"
 GITHUB_REPO="https://github.com/shariatululoom/pipelineDemoSecondGen"
 
 # Your package name
-PACKAGE_NAME="firstpackageskms"
+PACKAGE_NAME="PackageName"
 
 ### Setup script
 
